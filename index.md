@@ -109,6 +109,9 @@ branch.link(linkData, function(err, link) {
     // var timestamp = Math.round(+new Date()/1000);
     // var id = timestamp.toString();
     branch.setIdentity("suuid", function (err, data) {
+	data: {
+     	'~campaign': 'alvin test'
+	}
       console.log(err, data);
     });
   };
