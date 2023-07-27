@@ -30,13 +30,7 @@
       // sendData(event, data);
   }
 
-  var linkData = {
-  campaign: 'alvin test',
-};
 
-branch.link(linkData, function(err, link) {
-  console.log(link);
-});
 
   // branch.addListener('didShowJourney', thisListener); //A listener for a Journey impression
   function sendData (event, data) {
@@ -61,6 +55,8 @@ branch.link(linkData, function(err, link) {
     );
   };
 
+
+
   // branch.addListener('didShowJourney', thisListener); //A listener for showing a banner
 
   // function setTheData () {
@@ -69,9 +65,13 @@ branch.link(linkData, function(err, link) {
   //   branch.setBranchViewData({
       
   //     data: {
-  //       '~campaign': 'SetDataTest'
+  //       '~campaign': 'alvin test'
   //     }
   //   });
+	
+branch.link(linkData, function(err, link) {
+  console.log(link);
+});
   // };
 
   function buyEvent () {
