@@ -68,6 +68,7 @@
   //       '~campaign': 'alvin test'
   //     }
   //   });
+	console.log(data)
 	
 branch.link(linkData, function(err, link) {
   console.log(link);
