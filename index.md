@@ -106,8 +106,7 @@ branch.link(linkData, function(err, link) {
   };
   function setTheIdentity () {
     console.log("setting the identity");
-    // var timestamp = Math.round(+new Date()/1000);
-    // var id = timestamp.toString();
+	  
     branch.setIdentity("suuid", function (err, data) {
 	data: {
      	'~campaign': 'alvin test'
@@ -131,7 +130,7 @@ branch.link(linkData, function(err, link) {
     var canonicalURL = window.location.href;
     var linkData = {
       "$canonical_url": canonicalURL,
-      "campaign":"TTSite"
+      "campaign":"alvintestingSugarHoneyIceTea"
     };
 branch.link({campaign: 'branch_deeplink_test_campaign',channel: 'instacart_facebook',feature: 'paid_social',data: { '$deeplink_no_attribution': true }}, function(err, link) {
 console.log(err);
